@@ -5,6 +5,7 @@
   become: true
   ansible.builtin.dnf:
     name: epel-release
+    update_cache: true
     state: present
 
 - name: system packages | basic system utils
